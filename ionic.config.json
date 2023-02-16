@@ -1,0 +1,7 @@
+{
+  "name": "pru-churras",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
