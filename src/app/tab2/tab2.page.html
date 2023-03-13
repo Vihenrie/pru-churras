@@ -8,4 +8,44 @@
 
 <ion-content [fullscreen]="true">
 
+  <h1>Valendo: {{pontos}}</h1>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-button color="success" expand="block" (click)="adicionarPontos(1)">1</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="success" expand="block" (click)="adicionarPontos(3)">3</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="success" expand="block" (click)="adicionarPontos(6)">6</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="success" expand="block" (click)="adicionarPontos(9)">9</ion-button>
+      </ion-col>
+      <ion-col>
+        <ion-button color="success" expand="block" (click)="adicionarPontos(12)">12</ion-button>
+      </ion-col>
+    </ion-row>
+<!--
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color="success" expand="block" (click)="somapontos(0)">+</ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <h1>{{somapontos}}</h1>
+  -->
+
+    <ion-row>
+      <ion-col>
+        <ion-button color="warning" expand="block" (click)="zerarPontos()">Zerar pontos</ion-button>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
 </ion-content>
