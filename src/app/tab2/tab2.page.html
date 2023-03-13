@@ -28,18 +28,54 @@
         <ion-button color="success" expand="block" (click)="adicionarPontos(12)">12</ion-button>
       </ion-col>
     </ion-row>
-<!--
-
 
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button color="success" expand="block" (click)="somapontos(0)">+</ion-button>
+          <ion-button color="success" expand="block" (click)="adicionarPontos(0)">+</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="success" expand="block" (click)="adicionarPontos(0)">+</ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row >
+        <ion-col>
+          <h1>{{pontos}}</h1>
+        </ion-col>
+        <ion-col>
+          <h1>{{pontos}}</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button color="danger" expand="block" (click)="somapontos(0)">-</ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button color="danger" expand="block" (click)="somapontos(0)">-</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
-    <h1>{{somapontos}}</h1>
-  -->
+
+    <h1>Partidas</h1>
+
+    <ion-grid>
+      <ion-row >
+        <ion-col>
+          <h1>Time 1: </h1>
+        </ion-col>
+        <ion-col>
+          <h1>{{time1}}</h1>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <h1>Time 2: </h1>
+        </ion-col>
+        <ion-col>
+          <h1>{{time2}}</h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
 
     <ion-row>
       <ion-col>
