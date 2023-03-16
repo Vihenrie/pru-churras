@@ -32,26 +32,42 @@
     <ion-grid>
       <ion-row>
         <ion-col>
-          <ion-button color="success" expand="block" (click)="adicionarPontos(0)">+</ion-button>
+          <h1>Time 1</h1>
         </ion-col>
+        <ion-col></ion-col>
         <ion-col>
-          <ion-button color="success" expand="block" (click)="adicionarPontos(0)">+</ion-button>
+          <h1>Time 2</h1>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button color="success" expand="block" (click)="somapontos()">+</ion-button>
+        </ion-col>
+        <ion-col></ion-col>
+        <ion-col>
+          <ion-button color="success" expand="block" (click)="somapontos2()">+</ion-button>
         </ion-col>
       </ion-row>
       <ion-row >
         <ion-col>
-          <h1>{{pontos}}</h1>
+          <h1>{{time1}}</h1>
         </ion-col>
+        <ion-col></ion-col>
         <ion-col>
-          <h1>{{pontos}}</h1>
+          <h1>{{time2}}</h1>
         </ion-col>
       </ion-row>
       <ion-row>
         <ion-col>
-          <ion-button color="danger" expand="block" (click)="somapontos(0)">-</ion-button>
+          <ion-button color="danger" expand="block" (click)="subpontos()">-</ion-button>
         </ion-col>
+        <ion-col></ion-col>
         <ion-col>
-          <ion-button color="danger" expand="block" (click)="somapontos(0)">-</ion-button>
+          <ion-button color="danger" expand="block" (click)="subpontos2()">-</ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
@@ -64,7 +80,7 @@
           <h1>Time 1: </h1>
         </ion-col>
         <ion-col>
-          <h1>{{time1}}</h1>
+          <h1>{{pontosatual}}</h1>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -72,7 +88,7 @@
           <h1>Time 2: </h1>
         </ion-col>
         <ion-col>
-          <h1>{{time2}}</h1>
+          <h1>{{pontosatual2}}</h1>
         </ion-col>
       </ion-row>
     </ion-grid>
