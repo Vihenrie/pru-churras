@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AlertController } from '@ionic/angular';
 
 @Component({
   selector: 'app-tab2',
@@ -15,25 +16,36 @@ export class Tab2Page {
   time1: number = 0;
   time2: number = 0;
 
-  constructor() {}
+
+  constructor(private alertController: AlertController) {}
 
   adicionarPontos(valor: number) {
     this.pontos = valor;
   }
 
-  somapontos() {
+  async somapontos() {
     this.time1 = this.pontos + this.time1;
     if(this.time1 >= 12) {
       this.pontosatual++
       this.recomecar();
+      const alert = await this.alertController.create({
+        message: 'TIME 1 ACABA DE PONTUAR!',
+        buttons: ['SOMAR 1 PONTO!'],
+      });
+      await alert.present();
     }
   }
 
-  somapontos2() {
+  async somapontos2() {
     this.time2 = this.pontos + this.time2;
     if(this.time2 >= 12) {
       this.pontosatual2++
       this.recomecar();
+      const alert = await this.alertController.create({
+        message: 'TIME 2 ACABA DE PONTUAR!',
+        buttons: ['SOMAR 1 PONTO!'],
+      });
+      await alert.present();
     }
   }
 

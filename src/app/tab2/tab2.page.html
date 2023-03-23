@@ -6,26 +6,26 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" class="bck">
 
-  <h1>Valendo: {{pontos}}</h1>
+  <h1 class="valact">Valendo: {{pontos}}</h1>
 
   <ion-grid>
     <ion-row>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="adicionarPontos(1)">1</ion-button>
+        <ion-button color="warning" expand="block" (click)="adicionarPontos(1)">1</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="adicionarPontos(3)">3</ion-button>
+        <ion-button color="warning" expand="block" (click)="adicionarPontos(3)">3</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="adicionarPontos(6)">6</ion-button>
+        <ion-button color="warning" expand="block" (click)="adicionarPontos(6)">6</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="adicionarPontos(9)">9</ion-button>
+        <ion-button color="warning" expand="block" (click)="adicionarPontos(9)">9</ion-button>
       </ion-col>
       <ion-col>
-        <ion-button color="success" expand="block" (click)="adicionarPontos(12)">12</ion-button>
+        <ion-button color="warning" expand="block" (click)="adicionarPontos(12)">12</ion-button>
       </ion-col>
     </ion-row>
 
@@ -41,7 +41,6 @@
       </ion-row>
     </ion-grid>
 
-
     <ion-grid>
       <ion-row>
         <ion-col>
@@ -54,11 +53,11 @@
       </ion-row>
       <ion-row >
         <ion-col>
-          <h1>{{time1}}</h1>
+          <h1 class="pont">{{time1}}</h1>
         </ion-col>
         <ion-col></ion-col>
         <ion-col>
-          <h1>{{time2}}</h1>
+          <h1 class="pont">{{time2}}</h1>
         </ion-col>
       </ion-row>
       <ion-row>
@@ -72,7 +71,7 @@
       </ion-row>
     </ion-grid>
 
-    <h1>Partidas</h1>
+    <h1 class="valact">Partidas</h1>
 
     <ion-grid>
       <ion-row >
@@ -95,7 +94,7 @@
 
     <ion-row>
       <ion-col>
-        <ion-button color="warning" expand="block" (click)="zerarPontos()">Zerar pontos</ion-button>
+        <ion-button color="light" expand="block" (click)="zerarPontos()">Zerar pontos</ion-button>
       </ion-col>
     </ion-row>
 
